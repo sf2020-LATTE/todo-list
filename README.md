@@ -12,6 +12,14 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
+## todoテーブル
+|Column|Type|Options|
+|------|----|-------|
+|title|string|null: false|
+|detail|text|null: false|
+|datetime|integer|null: false|
+### Association
+
 
 * Database initialization
 

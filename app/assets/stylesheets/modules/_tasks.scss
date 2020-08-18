@@ -3,11 +3,11 @@
   height:100vh;
 }
 .sidebar-left{
-  width:200px;
+  width:15vw;
   background-color: lightgreen;
 }
 .contents-main{
-  width:calc(100vw - 400px);
+  width:70vw;
   background-color: #ffffff;
   display: flex;
   flex-direction:column;
@@ -15,8 +15,9 @@
 }
 .upper-field{
   width: 400px;
-  height:100px;
+  height:60px;
   background-color: gray;
+  margin-top: 80px;
 }
 .datetime-field{
 
@@ -25,16 +26,17 @@
 
 }
 .text-field{
-  width:400px;
+  width:600px;
   height:100px;
-  background-color: blue;
+  background-color: lightblue;
+  margin:15px 0 60px 0;
 }
 .task-field{
-  width:400px;
-  height:100px;
+  width:600px;
+  height:60vh;
   background-color: gray;
 }
 .sidebar-right{  
-  width: 200px;
+  width: 15vw;
   background-color: lightgreen;
 }

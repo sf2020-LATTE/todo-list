@@ -3,6 +3,9 @@ class TasksController < ApplicationController
     @tasks = Task.all
   end
   def create
-    Task.create(task: params[:task])
+    @task = Task.create(tasks_params)
+  end
+  def tasks_params
+    params.permit(:task,:deadline)
   end
 end

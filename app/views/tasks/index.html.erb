@@ -10,6 +10,7 @@
     </div>
     <div class="text-field">
     <%= form_with model: @task, local: true do |form| %>
+      <%= form.datetime_field :deadline, {discard_year: true} %>
       <%= form.text_field :task, class: 'form__inputtext', placeholder: "ここにtaskを記載してください" %>
       <%= form.submit '投稿' %>
     <% end %>
@@ -18,7 +19,8 @@
     <div class="task-field">
       <% @tasks.each do |task| %>
         <div class="content_post">
-          <p><%= task.task %></p>
+          <%= task.task %>
+          <%= task.deadline%>
         </div>
       <% end %>
     </div>

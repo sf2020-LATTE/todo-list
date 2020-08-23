@@ -7,7 +7,7 @@ class TasksController < ApplicationController
   end
   def destroy
     task = Task.find(params[:id])
-    task.destroy
+    task.destroy  
   end
   def tasks_params
     params.permit(:task,:deadline)

@@ -21,6 +21,7 @@
         <div class="content_post">
           <%= task.task %>
           <%= task.deadline%>
+          <%= link_to '削除', task_path(task.id), method: :delete %>
         </div>
       <% end %>
     </div>

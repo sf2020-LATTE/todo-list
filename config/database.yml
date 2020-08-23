@@ -51,5 +51,5 @@ production:
   <<: *default
   database: todo_list_production
   username: root
-  password: <%= ENV['12bc124d'] %>
+  password: <%= ENV['DATABASE_PASSWORD'] %>
   socket: /var/lib/mysql/mysql.sock
